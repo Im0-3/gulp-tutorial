@@ -10,7 +10,7 @@ gulp.task('sass', function() {
 
 gulp.task('html', function(){
     gulp.src('app/src/**/*.html')
-        .pipe(htmlhint())
+        .pipe(htmlhint('.htmlhintrc'))
         .pipe(htmlhint.reporter())
         .pipe(gulp.dest('app/product/'));
 });
