@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "jquery": true
+    },
+    "globals": {
+        jQuery: false,
+        $: true
+    },
+    "rules": {
+        "comma-dangle": [1, "never"], //オブジェクトや配列最後の値にカンマが付いている
+        "no-console": 1, //コンソールを使用している
+        "no-unused-vars": 1, //使われていない変数がある
+        "quotes": [2, "single"], //シングルクオートを使う
+        "consistent-return": 1, //関数の戻り値に何も指定していない
+        "default-case": 1, //switch文でdefaultが設定されていない
+        "eqeqeq": 1, //「===, !==」ではなく「==,!=」を使用している
+        "no-alert": 1, //アラートを使用している
+        "no-caller": 1, //arguments.calleeを使用している
+        "no-eval": 2, //evalを使用している
+        "no-new-func": 1, //Functionコンストラクタのインスタンスから関数を生成している
+        "no-proto": 2, //__proto__を使用している
+        "no-script-url": 1, //URLに「javascript:」を使用している
+        "no-void": 2, //voidを使用している
+        "camelcase": [2, {"properties": "always"}], //キャメルケースを使用していない
+        "no-array-constructor": 1 //Arrayコンストラクタを使用している
+    }
+}

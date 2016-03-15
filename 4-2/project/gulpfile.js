@@ -9,7 +9,12 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(gulp.dest('app/product/css/'))
         .pipe(browserSync.stream())
-        .pipe(notify('scssをcssにコンパイルしました'));
+        .pipe(notify({
+            title: 'Sassをコンパイルしました',
+            message: new Date(),
+            sound: 'Grass',
+            icon: 'logo.png'
+        }));
 });
 
 gulp.task('html', function(){
