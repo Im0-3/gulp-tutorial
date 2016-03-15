@@ -1,7 +1,7 @@
 # gulp-tutorial
-LIGブログの「gulp.js編：一歩踏み出すフロントエンド入門」の第３回、第４回、第5回のデータです。  
+LIGブログの「[gulp.js編：一歩踏み出すフロントエンド入門](http://liginc.co.jp/series/gulpbasic)」の[第３回](http://liginc.co.jp/250164)、[第４回](http://liginc.co.jp/252645)、第5回のデータです。  
 
-## [gulp.jsで便利なタスクを作ってみよう【デバッグ編】](http://liginc.co.jp/250164)
+## #3 [gulp.jsで便利なタスクを作ってみよう【デバッグ編】](http://liginc.co.jp/250164)
 
 *3-1
   *第２回までのおさらい
@@ -11,10 +11,12 @@ LIGブログの「gulp.js編：一歩踏み出すフロントエンド入門」�
   *Browsersyncを使ってブラウザ間同期をしてデバックの効率化をする
   
 
-## [gulp.jsで便利なタスクを作ってみよう【エラーと通知編】](http://liginc.co.jp/252645)
+## #4 [gulp.jsで便利なタスクを作ってみよう【エラーと通知編】](http://liginc.co.jp/252645)
 *4-1
   *第３回までのおさらい
 *4-2
   *gulp-notifyをつかってデスクトップに通知を行う
 *4-3
   *gulp-plumberをつかってタスク内でエラーが起きても処理を止めないようにする
+
+## #5 gulp.jsで便利なタスクを作ってみよう【JavaScript編】（3/21公開予定）
