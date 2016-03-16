@@ -35,11 +35,19 @@ gulp.task('browser-sync', function() {
 gulp.task('script', function(){
     gulp.src('app/src/js/*.js')
         .pipe(plumber({
+        .pipe(plumber({
             errorHandler: notify.onError('Error: <%= error.message %>')
         }))
-        .pipe(eslint())
         .pipe(eslint({useEslintrc: true}))
+        .pipe(eslint.format())
         .pipe(eslint.failAfterError())
+        .pipe(eslint.result(function(result){
+            if(result.errorCount !== 0) {
+                return;
+            }
+            gulp.src(result.filePath)
+                .pipe(gulp.dest('app/product/js/'));
+        }))
         .pipe(browserSync.stream());
 });
 
